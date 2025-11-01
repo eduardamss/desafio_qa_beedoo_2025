@@ -1,104 +1,59 @@
-## User Story
+# DESAFIO QA BEEDOO 2025
 
-##Lista de Curso
+Repositório do desafio de QA 2025, com User Stories, casos de teste, evidências e documentação do módulo de cursos:
 
-- Como visitande,
+[https://creative-sherbet-a51eac.netlify.app/](https://creative-sherbet-a51eac.netlify.app/)
 
-- Quero visualizar a lista de cursos disponíveis,
+---
 
-- para escolher um curso que me interesse. 
+## Funcionalidades Testadas
+- Listagem e detalhes de cursos  
+- Busca de cursos (existentes, inexistentes, inválidos)  
+- Inscrição e cancelamento de cursos  
+- Navegação entre páginas  
+- Responsividade e acessibilidade  
+- Performance (tempo de carregamento)
 
-*Critérios de aceitação*
+---
 
-- Todos os cursos devem estar visíveis na tela inicial.
--Cada curso deve mostrar imagem, nome e descrição e datas de inscrição.
--Caso não haja cursos, deve exebir a mensagem "Nenhum curso disponível". 
+## Casos de Teste (Resumo)
 
+| ID    | Funcionalidade    | Cenário                       | Tipo de Teste | Status |
+| ----- | ---------------- | ----------------------------- | ------------- | ------ |
+| CT001 | Exibir cursos     | Lista de cursos disponíveis  | Funcional     | ✅ Aprovado |
+| CT002 | Exibir cursos     | Nenhum curso disponível      | Negativo      | ⚠️ N/A |
+| CT004 | Detalhes do curso | Visualizar curso existente   | Funcional     | ❌ Reprovado  |
+| CT005 | Detalhes do curso | Curso inexistente            | Negativo      | ✅ Aprovado |
+| CT006 | Navegação         | Voltar à lista de cursos     | Funcional     | ✅ Aprovado |
+| CT007 | Busca             | Curso existente              | Funcional     | ⚠️ N/A  |
+| CT008 | Busca             | Curso inexistente            | Negativo      |⚠️ N/A |
+| CT009 | Busca             | Menos de 3 caracteres        | Negativo      | ❌ Reprovado |
+| CT010 | Busca             | Campo vazio                  | Funcional     | ⚠️ N/A |
+| CT015 | Responsividade    | Dispositivo móvel            | Não funcional | ✅ Aprovado |
+| CT016 | Acessibilidade    | Textos alternativos (ALT)    | Não funcional | ❌ Reprovado |
+| CT017 | Performance       | Tempo de carregamento        | Não funcional | ✅ Aprovado |
 
-##Ver detalhes de um curso
+> Para detalhes completos, passos de execução e todos os casos de teste, consulte: https://drive.google.com/drive/folders/1nOjGHkBO9HU_bLDM48qR_hXlufB5luUx?usp=sharing
+---
 
-- Como visitante,
+## Evidências
+- Planilha de casos de teste: https://docs.google.com/spreadsheets/d/1UACJCqiCH8YT3tpDomWJgHsTUtapSv5lZuomPkzsBgg/edit?usp=sharing 
 
-- quero acessar os detalhes de um curso,
+- Vídeos de execução: https://drive.google.com/drive/folders/1nOjGHkBO9HU_bLDM48qR_hXlufB5luUx?usp=sharing
 
-- para decidir se quero me inscrever.
+- User Story: https://drive.google.com/file/d/10caKhbQLGh-yXwzJ_rGasEOdys6qVM47/view?usp=sharing
 
-*Critério de aceitação*
+---
 
--Ao clicar em um curso deve abrir uma tela com informação detalhadas. 
-- O título e a descrição devem corresponder ao curso selecionado.
-- Se o curso não existir, exibir mensagem de erro ou redirecionamento. 
+## Ferramentas
+- Navegador Chrome
+- Git & GitHub  
+- Google Sheets  
+- Ferramenta de Captura 
 
+---
 
-##Pesquisa de curso
-
-- Como visitante, 
-
-- quero buscar curso por nome
-
-- para encontrar rapidamente o que desejo estudar. 
-
-*Critério de aceitação*
-
--Campo de busca deve aceitar pelo menos 3 caracteres.
--´Resultado deve mostrar apenas cursos compatíveis com o termo buscado.
-- Caso não haja correspondÊncia, exibir mensagem "Nenhum curso encontrado".
-
-
-##Inscrever-se em curso
-
-- Como usuário logado, 
-
-- quero me inscrever em um curso, 
-
-- para acessar o conteúdo completo.
-
-
-*Critério de aceitação*
-
-- Usuário deve estar logado.
-- Após clicar em "Inscrever-se", deve exibir mensagem de sucesso.
-- Caso o usuário já esteja inscrito, exibir "Você já está inscrito neste curso". 
-- Caso o usuário não esteja logado, deve redirecionar para o login. 
-- Deve ser possível cancelar a inscrição. 
-
-
-##Responsividade e acessibilidade 
-
-- Como visitante,
-
-- quero acessar o site em diferente dispositivos,
-
-- para conseguir navegar pelos cursos com conforto.
-
-
-*Critério de aceitação*
-
--O site deve se ajustar corretamente em telas mobiles, tablet e desktop.
--Os balões e links devem ser acessíveis (padrão WCAG)
--As imagens devem ter texto alternativos.
-
-
-##Perfomace (teste não funcional)
-
-- Como usuário,
-
-- quero que o site carregue rapidamente,
-
-- para que eu possa visualizar os cursos sem lentidão.
-
-
-*Critério de aceitação*
-
-- A página deve carregar completamete em até 3 segundos (rede comum).
-- As imagens devem ter tamanho otimizado. 
-- Nenhum erro de console deve aparecer no carregamento. 
-
-
-## Documentação e Evidências 
-
-- Planilha de Casos de Teste (https://docs.google.com/spreadsheets/d/1UACJCqiCH8YT3tpDomWJgHsTUtapSv5lZuomPkzsBgg/edit?usp=sharing)
-
-- Vídeos de Evidências (https://drive.google.com/drive/folders/1nOjGHkBO9HU_bLDM48qR_hXlufB5luUx?usp=drive_link)
-
-- Passo a Passo (docs/passo_passo)
+## Contato
+- Maria Eduarda Silva  
+- E-mail: silva.meduardams@gmail.com
+- LinkedIn: linkedin.com/in/maria-eduarda-ms/
